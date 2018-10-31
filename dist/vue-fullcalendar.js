@@ -767,15 +767,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	//
 	//
 	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
 	
 	// import langSets from './dataMap/langSets'
 
@@ -18467,7 +18458,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            _vm.selectThisDay(day, $event)
 	          }
 	        }
-	      }, [_vm._v("\n                + " + _vm._s(day.events[day.events.length - 1].cellIndex - _vm.eventLimit) + " more\n              ")]) : _vm._e()], 2)])
+	      }, [_vm._v("\n                还有" + _vm._s(day.events[day.events.length - 1].cellIndex - _vm.eventLimit) + "项...\n              ")]) : _vm._e()], 2)])
 	    }))
 	  })), _vm._v(" "), _c('div', {
 	    directives: [{
@@ -18497,23 +18488,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "more-body"
 	  }, [_c('ul', {
 	    staticClass: "body-list"
-	  }, [_vm._t("fc-body-list", _vm._l((_vm.selectDay.events), function(event, index) {
-	    return _c('li', {
-	      directives: [{
-	        name: "show",
-	        rawName: "v-show",
-	        value: (event.isShow),
-	        expression: "event.isShow"
-	      }],
-	      key: index,
-	      staticClass: "body-item",
-	      on: {
-	        "click": function($event) {
-	          _vm.eventClick(event, $event)
-	        }
-	      }
-	    }, [_vm._v("\n              " + _vm._s(event.title) + "\n            ")])
-	  }), {
+	  }, [_vm._t("fc-body-list", null, {
 	    data: _vm.selectDay
 	  })], 2)])]), _vm._v(" "), _vm._t("body-card")], 2)])], 1)
 	},staticRenderFns: []}

@@ -47,7 +47,7 @@
                 </event-card>
                 <p v-if="day.events.length > eventLimit"
                    class="more-link" @click.stop="selectThisDay(day, $event)">
-                  + {{day.events[day.events.length -1].cellIndex - eventLimit}} more
+                  还有{{day.events[day.events.length -1].cellIndex - eventLimit}}项...
                 </p>
               </div>
             </div>
@@ -63,16 +63,7 @@
           </div>
           <div class="more-body">
             <ul class="body-list">
-              <slot name="fc-body-list" :data="selectDay">
-                <li 
-                  v-for="(event, index) in selectDay.events"
-                  :key="index"
-                  v-show="event.isShow" 
-                  class="body-item"
-                  @click="eventClick(event, $event)">
-                {{event.title}}
-              </li>
-              </slot>
+              <slot name="fc-body-list" :data="selectDay"></slot>
             </ul>
           </div>
         </div>
