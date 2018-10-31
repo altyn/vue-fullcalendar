@@ -63,7 +63,7 @@
           </div>
           <div class="more-body">
             <ul class="body-list">
-              <slot :data="selectDay">
+              <slot name="fc-body-list" :data="selectDay">
                 <li 
                   v-for="(event, index) in selectDay.events"
                   :key="index"
@@ -121,7 +121,7 @@
       return {
         currentMonth : moment().startOf('month'),
         isLismit : true,
-        eventLimit : 3,
+        eventLimit : 2,
         showMore : false,
         morePos : {
           top: 0,
