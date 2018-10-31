@@ -63,11 +63,16 @@
           </div>
           <div class="more-body">
             <ul class="body-list">
-              <li v-for="event in selectDay.events"
-                  v-show="event.isShow" class="body-item"
+              <slot :data="selectDay">
+                <li 
+                  v-for="(event, index) in selectDay.events"
+                  :key="index"
+                  v-show="event.isShow" 
+                  class="body-item"
                   @click="eventClick(event, $event)">
                 {{event.title}}
               </li>
+              </slot>
             </ul>
           </div>
         </div>
