@@ -4,6 +4,11 @@ export default {
     monthNames  : ['January','February','March','April','May','June','July','August','September','October','November','December'],
     titleFormat : 'MMMM yyyy'
   },
+  ru : {
+    weekNames   : ['Вс', 'Пн','Вт','Ср','Чт','Пт','Сб'],
+    monthNames  : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+    titleFormat : 'MMMM yyyy'
+  },
   zh : {
     weekNames   : ['周日', '周一','周二','周三','周四','周五','周六'],
     monthNames  : ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
